@@ -27,10 +27,10 @@ public class TowerAttack : MonoBehaviour
                 float distance = Vector3.Distance(transform.position, enemy.transform.position);//计算当前脚本挂载的游戏对象到enemy的距离
                 if (distance < attackRange)//判断敌人是否在攻击范围内
                 {
-                    EnemyMovement EnemyScript = enemy.GetComponent<EnemyMovement>();
-                    if (EnemyScript != null)
+                    EnemyMovement enemyScript = enemy.GetComponent<EnemyMovement>();
+                    if (enemyScript != null)
                     {
-                        EnemyScript.TakeDamage(attackDamage);
+                        enemyScript.TakeDamage(attackDamage);
                     }
                     break;
                 }

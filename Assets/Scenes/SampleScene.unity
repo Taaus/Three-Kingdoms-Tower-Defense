@@ -295,8 +295,10 @@ MonoBehaviour:
   - {fileID: 491809868}
   - {fileID: 922541600}
   - {fileID: 451179870}
-  spanwnInterval: 2
-  enemyNum: 0
+  spawnInterval: 2
+  timeBetweenWaves: 3
+  totalWaves: 3
+  currentWave: 0
 --- !u!4 &450932631
 Transform:
   m_ObjectHideFlags: 0
@@ -1739,7 +1741,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseHp: 10
-  hptext: {fileID: 2034745398}
+  gold: 50
+  startGold: 200
+  hpText: {fileID: 2034745398}
+  goldText: {fileID: 1872342235}
 --- !u!4 &1362794110
 Transform:
   m_ObjectHideFlags: 0
@@ -2127,7 +2132,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u91D1\u5E01\uFF1A0"
+  m_text: "\u91D1\u5E01\uFF1A50"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8c7634943493212438031d0dfe9474d2, type: 2}
   m_sharedMaterial: {fileID: 3057792694615451752, guid: 8c7634943493212438031d0dfe9474d2, type: 2}

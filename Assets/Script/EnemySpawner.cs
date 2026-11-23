@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    // --- 面板配置区 ---
+    // --- 配置参数区 ---
     [Header("配置参数")]
     public GameObject enemyPrefab; //敌人预制体
     public Transform[] waypoints; //路点数组
