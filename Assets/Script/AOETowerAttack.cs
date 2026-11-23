@@ -42,12 +42,12 @@ public class AOETowerAttack : MonoBehaviour
         }
         if (hitEnemy)
         {
-            Debug.Log("周瑜释放神火计");s
+            Debug.Log("周瑜释放神火计");
         }
     }
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, attackRange);
+        Gizmos.DrawWireSphere(transform.position, attackRange);//测试vs自带的git
     }
 }
